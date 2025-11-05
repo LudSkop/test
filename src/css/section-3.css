@@ -1,4 +1,4 @@
- 
+/*    welcome-mobile        */ 
 .welcome-wrapper {
     display: flex;
     flex-direction: column;
@@ -67,6 +67,48 @@
 }
 .welcome-photo {
     border-radius: 40px;
-    width: 288px;
-    height: 162px;
+    width: 100%;
+    height: auto;
 }
+/*    welcome-tablet        */
+@media only screen and (min-width: 768px) {
+   
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 32px;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-title {
+    width: 336px;
+}
+.welcome-tablet {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome-photo {
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 704px; 
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    welcome-desktop        */
