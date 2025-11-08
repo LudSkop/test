@@ -3,9 +3,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 64px 16px;
+    padding: 64px 0;
     align-items: center;
     text-align: center;
+    background-color: yellow;
 }
  .welcome-container {
     display: flex;
@@ -17,6 +18,10 @@
     flex-direction: column;
     gap: 32px;    
  }
+ .welcome-container {
+    margin-bottom: 32px;
+ }
+
  .welcome-first-text {
     font-weight: 600;
     font-size: 16px;
@@ -41,9 +46,8 @@
     color: #0b0803;
     width: 288px;
     text-align: start;
-    
 }
-.welcome-button {
+.welcome-location {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -52,36 +56,49 @@
     padding: 10px 24px;
     width: 288px;
     height: 44px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #fff;
-
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-    background: #6f4e37;
+    background-color: #6f4e37;
+    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in;
 
 }
-.welcome-button-icon {
+.welcome-location:hover,
+.welcome-location:focus {
+    opacity: 0,5;
+    background-color: #e0cbb4;
+    color: #0b0803;
+
+}
+
+.welcome-location:hover .welcome-location-icon,
+.welcome-location:focus .welcome-location-icon {
+    opacity: 0,5;
+    fill: #0b0803;
+}
+
+.welcome-location-icon {
     fill: #fff;
+    transition: fill 300ms ease-in;
 }
 .welcome-photo {
     border-radius: 40px;
     width: 100%;
+    max-width: 288px;
     height: auto;
+    
 }
 /*    welcome-tablet        */
 @media only screen and (min-width: 768px) {
    
-.welcome-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 64px 32px;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .welcome-title {
+    width: 336px;
+}
+.welcome-text {
     width: 336px;
 }
 .welcome-tablet {
@@ -90,25 +107,42 @@
 }
 
 .welcome-photo {
-    border-radius: 40px;
-    width: 100%;
-    height: auto;
-    max-width: 704px; 
-    
+    max-width: 704px;
 }
+.welcome-location {
+    width: 181px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.welcome-container {
+    margin-right: 32px;
+    margin-bottom: 0;
+}
+}
 
 /*    welcome-desktop        */
+
+@media only screen and (min-width: 1440px) {
+
+    .welcome-photo {
+        max-width: 1312px;   
+    }
+    .welcome-title {
+        font-size: 48px;
+        width: 640px;
+    }
+    .welcome-text {
+        width: 640px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

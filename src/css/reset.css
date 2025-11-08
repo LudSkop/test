@@ -10,8 +10,7 @@ p{
 
 img{
     display: block;
-    max-width: 100%;
-    height: auto;
+    
 }
 
 button{
@@ -24,4 +23,10 @@ address{
 }
 a {
     text-decoration: none;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
 }

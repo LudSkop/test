@@ -1,0 +1,142 @@
+.container-experience {
+    padding: 64px 0;
+    background-color: yellow;
+}
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 24px;
+    width: 288px;
+    height: 164px;
+    margin-bottom: 32px;
+}
+.experience-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #0b0803;
+
+}
+
+.experience-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+
+}
+.experience-list-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+.photo {
+    border-radius: 32px;
+}
+
+.photo-section4:nth-child(1) img,
+.photo-section4:nth-child(2) img,
+.photo-section4:nth-child(5) img,
+.photo-section4:nth-child(6) img {
+    width: 100%;
+    max-width: 288px;
+    height: 288px;
+}
+
+.photo-section4:nth-child(3) img,
+.photo-section4:nth-child(4) img {
+    width: 100%;
+    max-width: 288px;
+    height: 162px;
+}
+
+.photo-section4:nth-child(7) img {
+    width: 100%;
+    max-width: 288px;
+    height: 391px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .container-experience {
+        background-color: yellow;
+    }
+    .wrapper-text {
+        width: 768px;
+        height: 94px;
+        }
+    .experience-list-photo {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    
+    }
+    .photo-section4 {
+        display: flex;
+        justify-content: center;
+        width: calc((100% - 24px) / 2);
+
+
+    }
+    .photo-section4:nth-child(1) img,
+    .photo-section4:nth-child(2) img,
+    .photo-section4:nth-child(5) img,
+    .photo-section4:nth-child(6) img {
+        width: 100%;
+        max-width: 336px;
+        height: 336px;
+    }
+    
+    .photo-section4:nth-child(3) img,
+    .photo-section4:nth-child(4) img {
+        width: 100%;
+        max-width: 336px;
+        height: 189px;
+    }
+    
+    .photo-section4:nth-child(7) img {
+        width: 100%;
+        max-width: 704px;
+        height: 391px;
+    }
+    .photo-section4:nth-child(7) {
+        width: 100%;
+        /* займати весь ряд */
+        display: flex;
+        justify-content: center;
+        /* картинка по центру */
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container-experience {
+        background-color: blue;
+       
+    }
+    .wrapper-text {
+        width: 768px;
+        height: 109px;
+    }
+    .experience-title {
+        font-size: 48px;
+    }
+    .experience-list-photo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1217px;
+
+    }
+
+}
